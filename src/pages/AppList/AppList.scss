@@ -1,0 +1,63 @@
+.list-cnt {
+    .seasrch-cnt {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 3;
+    }
+    .recommend-cnt {
+        padding: 10px 0 20px;
+        margin-top: 82px;
+        .recommend-label {
+            font-weight: 700;
+            font-size: 42px;
+            margin-bottom: 16px;
+            margin-left: 20px;
+        }
+        .recommend-list {
+            display: flex;
+            overflow-x: scroll;
+        }
+    }
+
+    .free-list {
+        padding-left: 20px;
+        border-top: 1px solid #f1f1f1; /*no*/
+        border-bottom: 1px solid #f1f1f1; /*no*/
+        overflow-x: hidden;
+        overflow-y: hidden;
+        .free-item {
+            display: flex;
+            padding: 16px 20px 16px 0;
+            border-bottom: 1px solid #f1f1f1; /*no*/
+
+            .free-item-no {
+                flex-basis: 120px;
+                font-size: 32px;
+                align-self: center;
+                text-align: center;
+                margin-right: 20px;
+                width: 120px;
+            }
+            .free-item-info {
+                flex: 1;
+            }
+        }
+    }
+    .more {
+        line-height: 40px;
+        background: #eee;
+    }
+}
+
+.loading-cnt {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    .lbl {
+        margin-left: 20px;
+    }
+}
